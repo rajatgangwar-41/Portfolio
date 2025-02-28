@@ -1,0 +1,25 @@
+import NavBar from "./NavBar"
+import Hero from "./Hero"
+import About from "./About"
+import Work from "./Work"
+import Skill from "./Skill"
+import Project from "./Project"
+import Feedback from "./Feedback"
+import Contact from "./Contact"
+import Footer from "./Footer"
+import Loader from "./Loader"
+import Counter from "./Counter"
+
+export {
+  NavBar,
+  Hero,
+  About,
+  Work,
+  Skill,
+  Project,
+  Feedback,
+  Contact,
+  Footer,
+  Loader,
+  Counter,
+}
