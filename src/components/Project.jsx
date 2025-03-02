@@ -122,7 +122,7 @@ const Project = SectionWrapper(() => {
           </h2>
         </motion.div>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("", "", 0, 1)}
           className={styles.sectionText}
         >
           Explore some of the projects I've worked on, each reflecting
