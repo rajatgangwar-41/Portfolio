@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React, { Suspense, useEffect, useRef } from "react"
 import {
   PerspectiveCamera,
@@ -38,7 +39,7 @@ function RubikCube(props) {
       {...props}
       dispose={null}
       position={[0, -0.25, 0]}
-      scale={10}
+      scale={11}
     >
       <group name="Sketchfab_Scene">
         <group

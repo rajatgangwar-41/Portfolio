@@ -69,7 +69,7 @@ const SpiderMan = (props) => {
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group name="Sketchfab_Scene" position={[0, -8.5, 0]} scale={8}>
+      <group name="Sketchfab_Scene" position={[0, -10.5, 0]} scale={10}>
         <group
           name="Sketchfab_model"
           rotation={[-Math.PI / 2, 0, 0]}
@@ -230,7 +230,7 @@ const SpiderManCanvas = () => {
       // frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [-10, 50, 0], fov: 25 }}
+      camera={{ position: [0, 50, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

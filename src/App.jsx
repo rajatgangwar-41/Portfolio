@@ -1,16 +1,31 @@
 import { BrowserRouter } from "react-router"
-import { About, Hero, NavBar, Work } from "./components/index"
+import {
+  NavBar,
+  Hero,
+  About,
+  Work,
+  Skill,
+  Project,
+  Feedback,
+  Contact,
+  Footer,
+} from "./components/index"
 import { StarsCanvas } from "./components/canvas"
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="w-full relative">
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
         <NavBar />
         <Hero />
         <About />
         <Work />
+        <Skill />
+        <Project />
+        <Feedback />
+        <Contact />
+        <Footer />
       </div>
     </BrowserRouter>
   )

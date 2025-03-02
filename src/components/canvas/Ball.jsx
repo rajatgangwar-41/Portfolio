@@ -1,4 +1,6 @@
-import React, { Suspense } from "react"
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
+import { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
 import {
   Decal,
@@ -39,11 +41,7 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      // frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    <Canvas dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />

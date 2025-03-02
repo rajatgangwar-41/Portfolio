@@ -1,11 +1,7 @@
+/* eslint-disable react/no-unknown-property */
 import { Canvas } from "@react-three/fiber"
 import { Suspense } from "react"
-import {
-  OrbitControls,
-  PerspectiveCamera,
-  Stage,
-  useGLTF,
-} from "@react-three/drei"
+import { OrbitControls, PerspectiveCamera, useGLTF } from "@react-three/drei"
 import CanvasLoader from "../Loader"
 
 function Mug(props) {

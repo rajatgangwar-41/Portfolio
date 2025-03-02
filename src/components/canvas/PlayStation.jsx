@@ -1,4 +1,5 @@
-import React, { Suspense } from "react"
+/* eslint-disable react/no-unknown-property */
+import { Suspense } from "react"
 import {
   PerspectiveCamera,
   Preload,
@@ -11,7 +12,7 @@ import CanvasLoader from "../Loader"
 function PlayStation(props) {
   const { nodes, materials } = useGLTF("/playstation5.glb")
   return (
-    <group {...props} dispose={null} position={[0, 0, 0]} scale={5}>
+    <group {...props} dispose={null} position={[0, 0, 0]} scale={6.2}>
       <group rotation={[-Math.PI / 2, 0, -Math.PI]} scale={0.196}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh

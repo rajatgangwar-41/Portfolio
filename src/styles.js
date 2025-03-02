@@ -16,9 +16,28 @@ const styles = {
   sectionText:
     "text-secondary leading-8 text-justify max-w-130 2md:max-w-150 text-[18px] md:text-xl",
 
-  paddingX: "sm:px-16 px-6",
-  paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-10 py-16",
+  paddingX: "sm:px-10 px-6",
+  paddingY: "sm:py-10 py-6",
+  padding: "sm:px-10 px-6 sm:py-10 py-16",
+
+  getNavUnderline: (element) => {
+    switch (element) {
+      case "Home":
+        return "ml-2"
+      case "About":
+        return "ml-28"
+      case "Work":
+        return "ml-52"
+      case "Tech":
+        return "ml-76"
+      case "Project":
+        return "ml-101"
+      case "Testimonial":
+        return "ml-133"
+      case "Contact":
+        return "ml-168"
+    }
+  },
 }
 
 export { styles }

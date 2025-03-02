@@ -1,6 +1,7 @@
 import logo from "./logo.svg"
 import web from "./web.png"
-// import github from "./github.png"
+import github from "./github.png"
+import live from "./live.png"
 import menu from "./menu.svg"
 import close from "./close.svg"
 
@@ -34,13 +35,15 @@ import clock from "./about/clock.png"
 import code from "./about/code.png"
 import computer from "./about/computer.png"
 
-import rajat from "./profile.png"
+// import rajat from "./profile.png"
+import rajat from "./rajat.jpeg"
 import beach from "./beach.jpg"
 
 export {
   logo,
   web,
-  // github,
+  github,
+  live,
   menu,
   close,
   cpp,

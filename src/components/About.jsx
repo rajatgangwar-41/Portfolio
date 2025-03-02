@@ -1,12 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unknown-property */
 import { useState } from "react"
 import { Tilt } from "react-tilt"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 import { styles } from "../styles"
 import { services } from "../constants"
-import { fadeIn, textVariant, zoomIn } from "../utils/motion"
+import { fadeIn, textVariant } from "../utils/motion"
 import {
   MugCanvas,
   PlayStationCanvas,
@@ -14,6 +12,7 @@ import {
   SpiderManCanvas,
 } from "./canvas"
 import Counter from "./Counter"
+import { SectionWrapper } from "../hoc"
 
 const ServiceCard = ({ index, title, icon, from, to }) => (
   <Tilt className="w-[270px] lg:max-2lg:w-[220px] 2lg:max-xl:w-[250px] cursor-pointer text-white">
@@ -34,7 +33,7 @@ const ServiceCard = ({ index, title, icon, from, to }) => (
           alt={title}
           className="w-20 h-20 lg:max-xl:w-16 lg:max-xl:h-16 object-contain"
         />
-        <h3 className="text-rose-600 text-[30px] lg:max-xl:text-2xl font-bold text-center">
+        <h3 className="text-rose text-[30px] lg:max-xl:text-2xl font-bold text-center">
           {to && <Counter from={from} to={to} />}
           <span className="text-white my-3 text-2xl lg:max-xl:text-xl">
             {title}
@@ -45,13 +44,16 @@ const ServiceCard = ({ index, title, icon, from, to }) => (
   </Tilt>
 )
 
-const About = () => {
+const About = SectionWrapper(() => {
   const [currentServiceId, setCurrentServiceId] = useState(0)
 
   return (
-    <section id="about" className={`mt-10 ${styles.sectionMargin}`}>
-      <div className="m-5 w-auto flex flex-col lg:flex-row gap-10 lg:gap-0 lg:justify-between">
-        <div className="flex flex-col items-center lg:items-start">
+    <>
+      <div className="m-5 w-auto flex flex-col lg:flex-row gap-10 lg:gap-5 lg:justify-between">
+        <motion.div
+          variants={fadeIn("right", "tween", 0.1, 1)}
+          className={`flex flex-col items-center lg:items-start bg-quadratic text-white rounded-2xl ${styles.padding}`}
+        >
           <motion.div variants={textVariant()}>
             <h4
               className={`${styles.sectionSubText} text-center lg:text-start`}
@@ -62,8 +64,8 @@ const About = () => {
           </motion.div>
 
           <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
-            className={styles.sectionText}
+            variants={fadeIn("", "", 0, 1)}
+            className={`${styles.sectionText} rounded-xl`}
           >
             I'm a passionate
             <span className="inline-block mx-2 text-xl font-semibold text-rose-600 ">
@@ -77,10 +79,10 @@ const About = () => {
             <br /> <br />
             Let's build something amazing together!
           </motion.p>
-        </div>
+        </motion.div>
         <motion.div
-          variants={zoomIn(0, 0.8)}
-          className="h-100 sm:h-150 lg:h-120 lg:w-120 xl:w-150"
+          variants={fadeIn("left", "tween", 0.1, 1)}
+          className={`h-100 sm:h-150 lg:h-128 lg:w-120 xl:w-150 bg-quadratic rounded-2xl`}
         >
           {[
             <SpiderManCanvas key="spiderMan" />,
@@ -106,7 +108,7 @@ const About = () => {
           ))}
         </motion.div>
       </div>
-      <div className="-mt-5 mx-5 flex flex-col md:flex-row md:flex-wrap justify-evenly lg:justify-between gap-10 lg:gap-5 xl:gap-0 items-center">
+      <div className="mt-10 mx-5 flex flex-col md:flex-row md:flex-wrap justify-evenly lg:justify-between gap-10 lg:gap-5 xl:gap-0 items-center">
         {services.map((service, index) => {
           return (
             <div key={service.title} onClick={() => setCurrentServiceId(index)}>
@@ -116,52 +118,8 @@ const About = () => {
         })}
       </div>
       <hr className="mt-10 mx-5 border-b-[2px] border-white" />
-    </section>
+    </>
   )
-}
+}, "about")
 
-// export default SectionWrapper(About, "about")
 export default About
-
-/* <motion.span
-              animate={{ y: [-5, 0, 5] }}
-              transition={{
-                duration: 1,
-                ease: "linear",
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-              className="inline-block text-[22px] font-medium text-cyan-400"
-            >
-              Frontend Developer &nbsp;
-            </motion.span> */
-
-{
-  /* <div className="relative mr-[100px] h-[400px] w-[27rem]">
-          <motion.div variants={zoomIn(0, 0.8)} className="h-full">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentServiceId} // Ensures re-render on change
-                initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -20, scale: 0.9 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="absolute inset-0"
-              >
-                {currentServiceId === 0 ? (
-                  <ProfileCanvas />
-                ) : currentServiceId === 1 ? (
-                  <MugCanvas />
-                ) : currentServiceId === 2 ? (
-                  <PlayStationCanvas />
-                ) : (
-                  <RubikCubeCanvas />
-                )}
-              </motion.div>
-            </AnimatePresence>
-          </motion.div>
-        </div> */
-}
-{
-  /* Canvas Container */
-}

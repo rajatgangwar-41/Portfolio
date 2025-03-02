@@ -6,7 +6,9 @@
   --color-secondary: #aaa6c3;
   /* --color-tertiary: #151030; */
   --color-tertiary: #251d553b;
-  --color-quadratic: #0c102b8a;
+  --color-quadratic: #0c102b;
+  --color-quadraticLight: #0c102b8a;
+  --color-rose: #e11d48;
   --color-black-100: #100d25;
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
@@ -29,6 +31,14 @@
     border-color: white;
   }
 
+  .download-button {
+    @apply cursor-pointer hover:scale-[103%] inline-flex h-12 text-[18px] items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] pl-5 pr-2 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50;
+  }
+
+  .social-media-li {
+    @apply cursor-pointer transition-all h-12 xs:h-15 md:h-18 lg:h-15 w-12 xs:w-15 md:w-18 lg:w-15 bg-[#0c102b] flex items-center justify-center shadow-[inset_1px_4px_2px_-3px_rgba(0,0,0,0.7),inset_-1px_-3px_3px_-2px_rgba(255,255,255,0.2)] p-6 rounded-lg hover:text-rose-600 hover:-translate-y-1;
+  }
+
   .shad {
     box-shadow: rgba(153, 121, 121, 0.17) 0px -23px 25px 0px inset,
       rgba(82, 56, 56, 0.15) 0px -36px 30px 0px inset,
@@ -41,8 +51,8 @@
   }
 
   .hash-span {
-    margin-top: -100px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
     display: block;
   }
 

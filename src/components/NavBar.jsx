@@ -1,36 +1,16 @@
 import { useEffect, useState } from "react"
-import { Link, NavLink } from "react-router"
+import { Link } from "react-router"
 import { motion } from "motion/react"
 
-import { SectionWrapper } from "../hoc"
-import { styles } from "../styles"
 import { navLinks } from "../constants"
 import { logo, menu, close } from "../assets"
-import { buttonVariant, fadeIn, slideIn } from "../utils/motion"
+import { navFadeIn } from "../utils/motion"
+import { styles } from "../styles"
 
-const NavBare = () => {
+const NavBar = () => {
   const [active, setActive] = useState("Home")
   const [toggle, setToggle] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-
-  const getNavUnderline = () => {
-    switch (active) {
-      case "Home":
-        return "ml-2"
-      case "About":
-        return "ml-28"
-      case "Work":
-        return "ml-52"
-      case "Tech":
-        return "ml-76"
-      case "Project":
-        return "ml-101"
-      case "Feedback":
-        return "ml-127"
-      case "Contact":
-        return "ml-130"
-    }
-  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,15 +28,15 @@ const NavBare = () => {
   }, [])
 
   return (
-    <motion.div
-      variants={fadeIn("down", "tween", 0, 0.5)}
+    <motion.section
+      variants={navFadeIn("down", "tween", 0, 0.5)}
       initial="hidden"
       animate={!scrolled ? "show1" : "show2"}
       className={`w-full z-1 fixed bg-transparent`}
     >
       <nav
-        className={`w-full max-w-xl sm:max-w-2xl md:max-w-3xl 2md:max-w-4xl lg:max-w-5xl 2lg:max-w-6xl xl:max-w-7xl mx-auto px-10 py-2 rounded-xl bg-[#0c102b8a] ${
-          !scrolled ? "mt-10 bg-[#0c102b8a]" : "py-3 bg-[#0c102b]"
+        className={`w-full px-10 py-2 rounded-xl ${styles.sectionMargin}  ${
+          !scrolled ? "mt-10 bg-quadraticLight" : "py-3 bg-quadratic"
         }`}
       >
         <div className={`flex justify-between items-center`}>
@@ -70,33 +50,30 @@ const NavBare = () => {
             <img
               src={logo}
               alt="logo"
-              className="w-full z-20 h-[80px] object-contain"
+              className="w-full h-[80px] object-contain"
             />
           </Link>
 
-          <div className="hidden 2md:block">
+          <div className="hidden lg:block">
             <ul className="list-none sm:flex p-2 gap-6">
               {navLinks.map((nav) => (
                 <li key={nav.id}>
-                  <motion.div
-                    // variants={buttonVariant()}
-                    // initial="hidden"
-                    // whileHover="show"
-                    className={`text-white z-10 text-[18px] hover:text-rose-600 font-medium cursor-pointer px-3 py-1`}
+                  <div
+                    className={`text-white text-[18px] hover:text-rose font-medium cursor-pointer px-3 py-1`}
                     onClick={() => setActive(nav.title)}
                   >
                     <a href={`#${nav.id}`}>{nav.title}</a>
-                  </motion.div>
+                  </div>
                 </li>
               ))}
             </ul>
             <hr
-              className={`h-1 w-21 rounded-4xl bg-rose-600 transition-all duration-500
-          ${getNavUnderline()}`}
+              className={`h-1 w-21 rounded-4xl bg-rose transition-all duration-500
+          ${styles.getNavUnderline(active)}`}
             />
           </div>
 
-          <div className="cursor-pointer 2md:hidden flex flex-1 justify-end items-center">
+          <div className="cursor-pointer lg:hidden flex flex-1 justify-end items-center">
             <img
               src={toggle ? close : menu}
               alt="menu"
@@ -129,10 +106,8 @@ const NavBare = () => {
           </div>
         </div>
       </nav>
-    </motion.div>
+    </motion.section>
   )
 }
 
-// const NavBar = SectionWrapper(NavBare, "navBar")
-
-export default NavBare
+export default NavBar

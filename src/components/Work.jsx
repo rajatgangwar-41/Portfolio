@@ -1,22 +1,22 @@
-/* eslint-disable react/prop-types */
+import { motion } from "motion/react"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component"
-import { motion } from "framer-motion"
 
 import "react-vertical-timeline-component/style.min.css"
 
 import { styles } from "../styles"
 import { experiences } from "../constants"
 import { textVariant } from "../utils/motion"
+import { SectionWrapper } from "../hoc"
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
         // background: "#1d18368a",
-        background: "#0c102b8a",
+        background: "#0c102b",
         color: "#fff",
         // width: 650,
         // height: 400,
@@ -49,7 +49,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className="text-white-100 text-[15px] pl-1 tracking-wider"
           >
             {point}
           </li>
@@ -59,10 +59,10 @@ const ExperienceCard = ({ experience }) => {
   )
 }
 
-const Work = () => {
+const Work = SectionWrapper(() => {
   return (
-    <section id="work" className={`mt-10 ${styles.sectionMargin}`}>
-      <motion.div variants={textVariant()} className="m-5 mx-5]">
+    <>
+      <motion.div variants={textVariant()} className="m-5 mx-5">
         <h4 className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </h4>
@@ -72,7 +72,7 @@ const Work = () => {
       </motion.div>
 
       <div className="mt-15 mx-5 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline lineColor="white">
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
@@ -82,9 +82,8 @@ const Work = () => {
         </VerticalTimeline>
       </div>
       <hr className="mt-10 mx-5 border-b-[2px] border-white" />
-    </section>
+    </>
   )
-}
+}, "work")
 
-// export default SectionWrapper(Work, "work")
 export default Work

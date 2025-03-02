@@ -23,7 +23,7 @@ import {
   itjobxs,
 } from "../assets"
 
-export const navLinks = [
+const navLinks = [
   {
     id: "home",
     title: "Home",
@@ -45,15 +45,20 @@ export const navLinks = [
     title: "Project",
   },
   {
+    id: "testimonial",
+    title: "Testimonial",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
 ]
 
-export const socialMedia = [
+const socialMedia = [
   {
     id: "linkedin",
     title: "Linkedin",
+    url: "https://www.linkedin.com/in/rajatgangwar41/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +81,7 @@ export const socialMedia = [
   {
     id: "github",
     title: "Github",
+    url: "https://github.com/rajatgangwar-41",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +102,7 @@ export const socialMedia = [
   {
     id: "gmail",
     title: "Gmail",
+    url: "mailto:rajat.gangwar41@gmail.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +124,7 @@ export const socialMedia = [
   {
     id: "facebook",
     title: "Facebook",
+    url: "https://www.facebook.com/rajatgangwar41/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -137,6 +145,7 @@ export const socialMedia = [
   {
     id: "instagram",
     title: "Instagram",
+    url: "https://www.instagram.com/rajatgangwar41/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -288,38 +297,11 @@ const technologies = [
   },
 ]
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-]
-
 const projects = [
   {
     name: "Car Rent",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation.",
     tags: [
       {
         name: "react",
@@ -336,6 +318,8 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
+    likes: Math.floor(Math.random() * 100),
   },
   {
     name: "Job IT",
@@ -357,6 +341,8 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
+    likes: Math.floor(Math.random() * 100),
   },
   {
     name: "Trip Guide",
@@ -378,7 +364,124 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
+    likes: Math.floor(Math.random() * 100),
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+const testimonials = [
+  {
+    testimonial:
+      "He easily implemented the Mathematical symbols library in our Application which was looking not so easy.",
+    name: "Manish Gupta",
+    designation: "Manager",
+    company: "Edfora",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rajat does.",
+    name: "Kumar K",
+    designation: "Founder",
+    company: "ITJOBXS",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    testimonial:
+      "After Rajat optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/men/8.jpg",
+  },
+]
+
+const text = {
+  heroSection:
+    "Let's connect! I'm a passionate developer eager to collaborate, innovate, and build amazing experiences. Reach out and say hello!",
+}
+
+const resumeURL =
+  // "https://drive.google.com/file/d/1D7g2KlwqfBUCU0DceHR_EHPoMgjeax9j/view?usp=sharing"
+  // "https://drive.google.com/file/d/1D7g2KlwqfBUCU0DceHR_EHPoMgjeax9j/view?usp=sharing"
+  "https://drive.google.com/drive/u/2/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59"
+export {
+  navLinks,
+  socialMedia,
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  text,
+  resumeURL,
+}

@@ -9,6 +9,9 @@ import Contact from "./Contact"
 import Footer from "./Footer"
 import Loader from "./Loader"
 import Counter from "./Counter"
+import ContactSvg from "./ContactSvg"
+import SocialMedia from "./SocialMedia"
+import ChatBot from "./ChatBot"
 
 export {
   NavBar,
@@ -19,7 +22,10 @@ export {
   Project,
   Feedback,
   Contact,
+  ContactSvg,
   Footer,
   Loader,
   Counter,
+  SocialMedia,
+  ChatBot,
 }
