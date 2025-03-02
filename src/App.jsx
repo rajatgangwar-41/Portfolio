@@ -16,7 +16,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="w-full relative">
-        {/* <StarsCanvas /> */}
+        <StarsCanvas />
         <NavBar />
         <Hero />
         <About />
