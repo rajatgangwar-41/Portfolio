@@ -37,7 +37,7 @@ import computer from "./about/computer.png"
 
 // import rajat from "./profile.png"
 import rajat from "./rajat.jpeg"
-import beach from "./beach.jpg"
+// import beach from "./beach.jpg"
 
 export {
   logo,
@@ -73,5 +73,5 @@ export {
   edfora,
   itjobxs,
   rajat,
-  beach,
+  // beach,
 }
