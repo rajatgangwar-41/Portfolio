@@ -27,7 +27,14 @@ const Skill = SectionWrapper(() => {
               onMouseLeave={() => setHovered("")}
               key={name}
             >
-              <BallCanvas icon={icon} />
+              {/* <BallCanvas icon={icon} /> */}
+              <div className="w-24 h-24 flex items-center justify-center rounded-full bg-blue-100 shadow-lg">
+                <img
+                  src={icon}
+                  alt={name}
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
               <AnimatePresence>
                 {hovered === name && (
                   <motion.div

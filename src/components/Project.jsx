@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Tilt } from "react-tilt"
 import { motion } from "motion/react"
 
@@ -21,7 +21,12 @@ const ProjectCard = ({
   const [likesCount, setLikesCount] = useState([false, likes])
 
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <Tilt
         options={{
           max: 45,
@@ -111,9 +116,17 @@ const Project = SectionWrapper(() => {
     <>
       <motion.div
         variants={fadeIn("right", "tween", 0.1, 1)}
-        className={`m-5 max-w-max flex flex-col mx-5 lg:mx-auto 2lg:mx-5 items-center lg:items-start bg-quadratic text-white rounded-2xl ${styles.padding}`}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className={`m-5 max-w-max flex flex-col mx-5 sm:mx-auto 2lg:mx-5 items-center lg:items-start bg-quadratic text-white rounded-2xl ${styles.padding}`}
       >
-        <motion.div variants={textVariant()}>
+        <motion.div
+          variants={textVariant()}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+        >
           <p className={`${styles.sectionSubText} text-center lg:text-left`}>
             My work
           </p>
@@ -123,6 +136,9 @@ const Project = SectionWrapper(() => {
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
           className={styles.sectionText}
         >
           Explore some of the projects I've worked on, each reflecting

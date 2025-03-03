@@ -473,7 +473,9 @@ const text = {
 const resumeURL =
   // "https://drive.google.com/file/d/1D7g2KlwqfBUCU0DceHR_EHPoMgjeax9j/view?usp=sharing"
   // "https://drive.google.com/file/d/1D7g2KlwqfBUCU0DceHR_EHPoMgjeax9j/view?usp=sharing"
-  "https://drive.google.com/drive/u/2/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59"
+  // "https://drive.google.com/drive/u/2/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59"
+  "https://drive.google.com/drive/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59?usp=drive_link"
+
 export {
   navLinks,
   socialMedia,

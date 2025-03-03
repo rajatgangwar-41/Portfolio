@@ -12,6 +12,7 @@ import Counter from "./Counter"
 import ContactSvg from "./ContactSvg"
 import SocialMedia from "./SocialMedia"
 import ChatBot from "./ChatBot"
+import useIsDesktop from "../hooks/useIsDesktop"
 
 export {
   NavBar,
@@ -28,4 +29,5 @@ export {
   Counter,
   SocialMedia,
   ChatBot,
+  useIsDesktop,
 }
