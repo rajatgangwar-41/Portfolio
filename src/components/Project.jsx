@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Tilt } from "react-tilt"
 import { motion } from "motion/react"
 
@@ -22,7 +22,7 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+      variants={fadeIn("up", "spring", index * 0.25, 0.75)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
@@ -111,6 +111,77 @@ const ProjectCard = ({
   )
 }
 
+// const ProjectLinks = ({
+//   name,
+//   image,
+//   source_code_link,
+//   live_link,
+//   index,
+//   likes,
+//   likesCount,
+//   setLikesCount,
+// }) => {
+//   return (
+//     <div className="flex flex-col gap-10">
+//       <img
+//         className="rounded-2xl w-full max-h-100"
+//         src={image}
+//         alt={`project-${index} image`}
+//       />
+//       <div className="mt-5">
+//         <div className="flex justify-between">
+//           <h3 className="text-white font-bold text-[24px]">{name}</h3>
+//           <h6 className="text-white flex space-x-2 font-bold text-[24px]">
+//             <svg
+//               onClick={() =>
+//                 setLikesCount(([isLiked, likes]) =>
+//                   isLiked ? [false, likes - 1] : [true, likes + 1]
+//                 )
+//               }
+//               width="25"
+//               height="25"
+//               viewBox="0 0 24 24"
+//               fill={likesCount[0] ? "crimson" : "transparent"}
+//               stroke={likesCount[0] ? "crimson" : "white"}
+//               strokeWidth="1.2"
+//               strokeLinecap="round"
+//               strokeLinejoin="round"
+//               xmlns="http://www.w3.org/2000/svg"
+//               className="cursor-pointer"
+//             >
+//               <path d="M12 21s-6-4.35-9.16-7.62A5.45 5.45 0 0 1 3.5 5.5 5.45 5.45 0 0 1 9 5.5a5.45 5.45 0 0 1 3 2.16A5.45 5.45 0 0 1 15 5.5a5.45 5.45 0 0 1 5.66 8.38C18 16.65 12 21 12 21z" />
+//             </svg>
+
+//             <span className="font-semibold text-[16px]">{likesCount}</span>
+//           </h6>
+//         </div>
+//       </div>
+//       <div className="flex flex-wrap gap-2">
+//         <a href={source_code_link} target="_blank" className=" h-full">
+//           <button className="download-button shimmer">
+//             Source Code
+//             <img
+//               className="ml-3 w-[40px] h-[40px]"
+//               src={github}
+//               alt="source code link"
+//             />
+//           </button>
+//         </a>
+//         <a href={live_link} target="_blank" className="h-full">
+//           <button className="download-button shimmer">
+//             Live Link
+//             <img
+//               className="ml-3 w-[30px] h-[30px]"
+//               src={live}
+//               alt="live link"
+//             />
+//           </button>
+//         </a>
+//       </div>
+//     </div>
+//   )
+// }
+
 const Project = SectionWrapper(() => {
   return (
     <>
@@ -157,7 +228,38 @@ const Project = SectionWrapper(() => {
           to life.
         </motion.p>
       </motion.div>
-
+      {/* <motion.div
+        variants={fadeIn("left", "tween", 0.1, 1)}
+        // className={`h-100 sm:h-150 lg:h-110 lg:w-120 xl:w-150 bg-quadratic rounded-2xl`}
+        className={`m-5 max-w-max flex flex-col mx-5 sm:mx-auto 2lg:mx-5 items-center lg:items-start bg-quadratic text-white rounded-2xl ${styles.padding}`}
+      >
+        {projects
+          .map((project, index) => (
+            <ProjectLinks
+              key={index}
+              {...project}
+              likesCount={likesCount}
+              setLikesCount={setLikesCount}
+            />
+          ))
+          .map((Component, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              animate={
+                currentServiceId === index
+                  ? { opacity: 1, y: 0, scale: 1 }
+                  : { opacity: 0, y: -20, scale: 0.9 }
+              }
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className={`h-full ${
+                currentServiceId === index ? "visible" : "hidden"
+              }`}
+            >
+              {Component}
+            </motion.div>
+          ))}
+      </motion.div> */}
       <div className="mt-10 mx-5 flex flex-wrap gap-y-10 justify-center md:justify-between 2md:justify-around 2lg:justify-between">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

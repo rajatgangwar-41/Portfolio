@@ -46,7 +46,7 @@ const Hero = SectionWrapper(() => {
               rel="noopener noreferrer"
               className="mt-7 w-full h-full"
             >
-              <button className="download-button">
+              <button className="download-button shimmer">
                 Resume
                 <svg
                   width="40"

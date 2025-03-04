@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react"
 import { BallCanvas } from "./canvas"
 import { technologies } from "../constants"
 import { styles } from "../styles"
-import { textVariant } from "../utils/motion"
+import { textVariant, zoomIn } from "../utils/motion"
 import { SectionWrapper } from "../hoc"
 
 const Skill = SectionWrapper(() => {
@@ -19,7 +19,7 @@ const Skill = SectionWrapper(() => {
         </h2>
       </motion.div>
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map(({ name, icon }) => {
+        {technologies.map(({ name, icon }, index) => {
           return (
             <div
               className="w-28 h-28"
@@ -28,13 +28,16 @@ const Skill = SectionWrapper(() => {
               key={name}
             >
               {/* <BallCanvas icon={icon} /> */}
-              <div className="w-24 h-24 flex items-center justify-center rounded-full bg-blue-100 shadow-lg">
+              <motion.div
+                variants={zoomIn(index * 0.1, 0.5)}
+                className="w-24 h-24 flex items-center justify-center rounded-full bg-blue-100 shadow-lg"
+              >
                 <img
                   src={icon}
                   alt={name}
                   className="w-16 h-16 object-contain"
                 />
-              </div>
+              </motion.div>
               <AnimatePresence>
                 {hovered === name && (
                   <motion.div
