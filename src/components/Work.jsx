@@ -63,9 +63,9 @@ const Work = SectionWrapper(() => {
   return (
     <>
       <motion.div variants={textVariant()} className="m-5 mx-5">
-        <h4 className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
-        </h4>
+        </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
         </h2>

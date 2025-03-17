@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { AnimatePresence, motion } from "motion/react"
 
-import { BallCanvas } from "./canvas"
+// import { BallCanvas } from "./canvas"
 import { technologies } from "../constants"
 import { styles } from "../styles"
 import { textVariant, zoomIn } from "../utils/motion"
@@ -13,7 +13,7 @@ const Skill = SectionWrapper(() => {
   return (
     <>
       <motion.div variants={textVariant()} className="m-5">
-        <h4 className={`${styles.sectionSubText} text-center`}>Skills</h4>
+        <p className={`${styles.sectionSubText} text-center`}>Skills</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Tools & Tech.
         </h2>

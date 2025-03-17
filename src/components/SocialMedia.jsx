@@ -6,25 +6,27 @@ import { fadeIn } from "../utils/motion"
 const SocialMedia = ({ id, icon, title, url, index }) => {
   const [isSocialMediaHovered, setIsSocialMediaHovered] = useState(false)
   return (
-    <div
+    <li
       key={id}
       onMouseEnter={() => setIsSocialMediaHovered(true)}
       onMouseLeave={() => setIsSocialMediaHovered(false)}
     >
-      <motion.li
+      <motion.a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Visit my ${title} profile`}
         variants={fadeIn("right", "tween", index * 0.1, 0.1)}
-        className="social-media-li"
+        className="block social-media-li"
       >
-        <a href={url} target="_blank" className="block">
-          {icon}
-        </a>
-      </motion.li>
+        {icon}
+      </motion.a>
       {isSocialMediaHovered && (
         <div className="absolute text-rose mt-2 text-center text-[12px] xs:text-[14px] md:text-[16px] font-semibold">
           {title}
         </div>
       )}
-    </div>
+    </li>
   )
 }
 

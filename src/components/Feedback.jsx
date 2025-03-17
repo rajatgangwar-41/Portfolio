@@ -48,9 +48,9 @@ const Feedback = SectionWrapper(() => {
       <div className={`bg-quadratic mx-5 rounded-[20px]`}>
         <div className={`text-white rounded-2xl ${styles.padding}`}>
           <motion.div variants={textVariant()}>
-            <h4 className={`${styles.sectionSubText} text-center lg:text-left`}>
+            <p className={`${styles.sectionSubText} text-center lg:text-left`}>
               What others say
-            </h4>
+            </p>
             <h2
               className={`${styles.sectionHeadText} text-center lg:text-left`}
             >

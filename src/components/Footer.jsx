@@ -2,7 +2,7 @@ import { navLinks, socialMedia } from "../constants"
 import { SocialMedia } from "./index"
 import { styles } from "../styles"
 import { motion } from "motion/react"
-import { fadeIn, slideIn } from "../utils/motion"
+import { fadeIn } from "../utils/motion"
 
 const Footer = () => {
   return (
@@ -77,7 +77,7 @@ const Footer = () => {
             }}
             className="h-20 w-20 bg-rose-600 rounded-full cursor-pointer flex items-center justify-center"
           >
-            <a href="#home">
+            <a href="#home" aria-label="Back to top">
               <svg
                 width="50"
                 height="50"
@@ -88,6 +88,7 @@ const Footer = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M12 19V5" />
                 <path d="M5 12l7-7 7 7" />

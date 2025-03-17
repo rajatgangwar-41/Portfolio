@@ -1,4 +1,3 @@
-import * as React from "react"
 import { useState } from "react"
 import { Tilt } from "react-tilt"
 import { motion } from "motion/react"
@@ -1763,12 +1762,12 @@ const ServiceCard = ({ index, title, icon, from, to }) => (
           alt={title}
           className="w-20 h-20 lg:max-xl:w-16 lg:max-xl:h-16 object-contain"
         />
-        <h3 className="text-rose text-[30px] lg:max-xl:text-2xl font-bold text-center">
+        <div className="text-rose text-[30px] lg:max-xl:text-2xl font-bold text-center">
           {to && <Counter from={from} to={to} />}
           <span className="text-white my-3 text-2xl lg:max-xl:text-xl">
             {title}
           </span>
-        </h3>
+        </div>
       </div>
     </motion.div>
   </Tilt>
@@ -1804,11 +1803,9 @@ const About = SectionWrapper(() => {
           className={`flex flex-col items-center lg:items-start bg-quadratic text-white rounded-2xl ${styles.padding}`}
         >
           <motion.div variants={textVariant()}>
-            <h4
-              className={`${styles.sectionSubText} text-center lg:text-start`}
-            >
+            <p className={`${styles.sectionSubText} text-center lg:text-start`}>
               Introduction
-            </h4>
+            </p>
             <h2 className={styles.sectionHeadText}>About Me.</h2>
           </motion.div>
 

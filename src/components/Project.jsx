@@ -69,7 +69,7 @@ const ProjectCard = ({
         <div className="mt-5">
           <div className="flex justify-between">
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <h6 className="text-white flex space-x-2 font-bold text-[24px]">
+            <div className="text-white flex space-x-2 font-bold text-[24px]">
               <svg
                 onClick={() =>
                   setLikesCount(([isLiked, likes]) =>
@@ -91,7 +91,7 @@ const ProjectCard = ({
               </svg>
 
               <span className="font-semibold text-[16px]">{likesCount}</span>
-            </h6>
+            </div>
           </div>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>

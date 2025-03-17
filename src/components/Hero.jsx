@@ -16,7 +16,7 @@ const Hero = SectionWrapper(() => {
           variants={fadeIn("right", "tween", 0.1, 1)}
           className="mx-5 mt-15 flex flex-col items-center lg:items-start"
         >
-          <h4 className={styles.heroSubText}>Welcome To My World</h4>
+          <p className={styles.heroSubText}>Welcome To My World</p>
           <h1 className={styles.heroHeadText}>
             Hi, I'm <span className="text-rose">Rajat</span>
           </h1>
@@ -40,7 +40,7 @@ const Hero = SectionWrapper(() => {
           </div>
           <div className={styles.sectionText}>{text.heroSection}</div>
           <div className="flex flex-col sm:flex-row gap-5 justify-between">
-            <a
+            {/* <a
               href={resumeURL}
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,48 @@ const Hero = SectionWrapper(() => {
                   />
                 </svg>
               </button>
+            </a> */}
+            <a
+              href={resumeURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-7 w-full h-full download-button shimmer"
+              aria-label="Download Resume"
+            >
+              <span className="mr-2">Resume</span>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="pt-1"
+                aria-hidden="true"
+              >
+                <path
+                  d="M50 25v30"
+                  stroke="#94a3b8"
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                />
+
+                <path
+                  d="M40 45l10 10 10-10"
+                  stroke="#94a3b8"
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+
+                <path
+                  d="M30 65h40"
+                  stroke="#94a3b8"
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                />
+              </svg>
             </a>
+
             <a href="#contact">
               <svg
                 width="150"
@@ -87,6 +128,7 @@ const Hero = SectionWrapper(() => {
                 viewBox="0 0 180 180"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-label="Contact Me"
               >
                 <g className="animate-Spin origin-center">
                   <path
