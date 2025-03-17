@@ -11,16 +11,21 @@ const SocialMedia = ({ id, icon, title, url, index }) => {
       onMouseEnter={() => setIsSocialMediaHovered(true)}
       onMouseLeave={() => setIsSocialMediaHovered(false)}
     >
-      <motion.a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Visit my ${title} profile`}
+      <motion.div
         variants={fadeIn("right", "tween", index * 0.1, 0.1)}
-        className="block social-media-li"
+        className="social-media-li"
       >
-        {icon}
-      </motion.a>
+        <motion.a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit my ${title} profile`}
+          variants={fadeIn("right", "tween", index * 0.1, 0.1)}
+          className="block social-media-li"
+        >
+          {icon}
+        </motion.a>
+      </motion.div>
       {isSocialMediaHovered && (
         <div className="absolute text-rose mt-2 text-center text-[12px] xs:text-[14px] md:text-[16px] font-semibold">
           {title}
