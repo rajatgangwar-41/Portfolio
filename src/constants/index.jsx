@@ -13,7 +13,7 @@ import {
   gsap,
   motion,
   githubTech,
-  carrent,
+  jobPortal,
   jobit,
   tripguide,
   clock,
@@ -299,26 +299,35 @@ const technologies = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Job Portal",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation.",
+      "Developed a job portal with role-based authentication, allowing recruiters to post and manage jobs while candidates can apply and save listings. Designed a responsive UI for seamless user experience and efficient job management.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "shadecn/ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "yellow-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    image: jobPortal,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Job_Portal",
+    live_link: "https://rajatgangwar-jobportal.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
   {
@@ -385,7 +394,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: jobPortal,
     source_code_link: "https://github.com/",
     live_link: "https://github.com/",
     likes: Math.floor(Math.random() * 100),

@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router"
-import { StarsCanvas } from "./components/canvas"
-import useIsDesktop from "./hooks/useIsDesktop"
+// import { StarsCanvas } from "./components/canvas"
+// import useIsDesktop from "./hooks/useIsDesktop"
 import {
   NavBar,
   Hero,
@@ -14,11 +14,11 @@ import {
 } from "./components/index"
 
 const App = () => {
-  const isDesktop = useIsDesktop()
+  // const isDesktop = useIsDesktop()
   return (
     <BrowserRouter>
       <div className="w-full relative">
-        {isDesktop && <StarsCanvas />}
+        {/* {isDesktop && <StarsCanvas />} */}
         <NavBar />
         <Hero />
         <About />

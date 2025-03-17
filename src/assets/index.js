@@ -27,7 +27,7 @@ import githubTech from "./tech/github.png"
 import edfora from "./company/edfora.png"
 import itjobxs from "./company/itjobxs.png"
 
-import carrent from "./carrent.png"
+import jobPortal from "./job-portal.png"
 import jobit from "./jobit.png"
 import tripguide from "./tripguide.png"
 
@@ -64,7 +64,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
+  jobPortal,
   jobit,
   tripguide,
   clock,

@@ -7,12 +7,12 @@ import useIsDesktop from "../hooks/useIsDesktop"
 import { styles } from "../styles"
 import { services } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
-import {
-  MugCanvas,
-  PlayStationCanvas,
-  RubikCubeCanvas,
-  SpiderManCanvas,
-} from "./canvas"
+// import {
+//   MugCanvas,
+//   PlayStationCanvas,
+//   RubikCubeCanvas,
+//   SpiderManCanvas,
+// } from "./canvas"
 import Counter from "./Counter"
 import { SectionWrapper } from "../hoc"
 
@@ -1780,10 +1780,14 @@ const About = SectionWrapper(() => {
   const [currentServiceId, setCurrentServiceId] = useState(0)
   const images = isDesktop
     ? [
-        <SpiderManCanvas key="spiderMan" />,
-        <MugCanvas key="mug" />,
-        <PlayStationCanvas key="playStation" />,
-        <RubikCubeCanvas key="rubik" />,
+        // <SpiderManCanvas key="spiderMan" />,
+        // <MugCanvas key="mug" />,
+        // <PlayStationCanvas key="playStation" />,
+        // <RubikCubeCanvas key="rubik" />,
+        <SvgComponent1 key="about-image1" />,
+        <SvgComponent2 key="about-image2" />,
+        <SvgComponent3 key="about-image3" />,
+        <SvgComponent4 key="about-image4" />,
       ]
     : [
         <SvgComponent1 key="about-image1" />,
