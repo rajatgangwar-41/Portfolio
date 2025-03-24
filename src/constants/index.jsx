@@ -21,6 +21,7 @@ import {
   computer,
   edfora,
   itjobxs,
+  busTicketBooking,
 } from "../assets"
 
 const navLinks = [
@@ -299,58 +300,67 @@ const technologies = [
 
 const projects = [
   {
-    name: "Job Portal",
+    name: "Bus Ticket Booking",
     description:
-      "Developed a job portal with role-based authentication, allowing recruiters to post and manage jobs while candidates can apply and save listings. Designed a responsive UI for seamless user experience and efficient job management.",
+      "Developed a bus ticket booking platform with bus search, seat selection, seat availability check, smooth animations, advanced filters (price range, bus amenities, bus company, bus type), user information validation, and ticket printing for a seamless booking experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "motion",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+    ],
+    image: busTicketBooking,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Bus_Ticket_Booking",
+    live_link: "https://rajatgangwar-busticketbooking.netlify.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Job Portal",
+    description:
+      "Developed a job portal with role-based authentication, allowing recruiters to post and manage jobs while candidates can apply and save listings. Designed a responsive UI for seamless user experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
       },
       {
         name: "shadecn/ui",
         color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
       },
       {
         name: "clerk",
         color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
       },
       {
         name: "supabase",
         color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
       },
     ],
     image: jobPortal,
     source_code_link:
       "https://github.com/rajatgangwar-41/Project_React_BP-Job_Portal",
     live_link: "https://rajatgangwar-jobportal.netlify.app/",
-    likes: Math.floor(Math.random() * 100),
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
     likes: Math.floor(Math.random() * 100),
   },
   {
@@ -361,14 +371,17 @@ const projects = [
       {
         name: "nextjs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        borderColor: "border-[#56ccf28a]",
       },
       {
         name: "css",
         color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "supabase",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
       },
     ],
     image: tripguide,
@@ -384,14 +397,17 @@ const projects = [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
+        borderColor: "border-[#56ccf28a]",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
       },
     ],
     image: jobPortal,
@@ -407,14 +423,17 @@ const projects = [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
+        borderColor: "border-[#56ccf28a]",
       },
       {
         name: "scss",
         color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
       },
     ],
     image: jobit,
@@ -430,14 +449,17 @@ const projects = [
       {
         name: "nextjs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        borderColor: "border-[#56ccf28a]",
       },
       {
         name: "css",
         color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "supabase",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
       },
     ],
     image: tripguide,

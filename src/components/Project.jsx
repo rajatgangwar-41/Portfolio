@@ -93,14 +93,16 @@ const ProjectCard = ({
               <span className="font-semibold text-[16px]">{likesCount}</span>
             </div>
           </div>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-justify text-[14px]">
+            {description}
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color} border border-quadraticLight rounded-xl py-1 px-2`}
+              className={`text-[14px] ${tag.color} border ${tag.borderColor} rounded-xl py-1 px-2`}
             >
               #{tag.name}
             </p>
