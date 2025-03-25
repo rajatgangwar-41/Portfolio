@@ -22,6 +22,7 @@ import {
   edfora,
   itjobxs,
   busTicketBooking,
+  videoCallApp,
 } from "../assets"
 
 const navLinks = [
@@ -364,12 +365,12 @@ const projects = [
     likes: Math.floor(Math.random() * 100),
   },
   {
-    name: "Trip Guide",
+    name: "Video Call App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a video calling app enabling users to join one-on-one or group calls, exchange real-time messages, and generate sharable call links. It offers an intuitive user experience, and provides essential call management features like joining, leaving, and handling multiple participants efficiently.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
         borderColor: "border-[#56ccf28a]",
       },
@@ -379,14 +380,15 @@ const projects = [
         borderColor: "border-[#ec008c8a]",
       },
       {
-        name: "supabase",
-        color: "yellow-text-gradient",
-        borderColor: "border-[#ffdd006a]",
+        name: "zegocloud",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    image: videoCallApp,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Video_Call_App/",
+    live_link: "https://rajatgangwar-videocallapp.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
   {
@@ -416,9 +418,9 @@ const projects = [
     likes: Math.floor(Math.random() * 100),
   },
   {
-    name: "Job IT",
+    name: "Video Call App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a video calling app enabling users to join one-on-one or group calls, exchange real-time messages, and generate sharable call links. It offers an intuitive user experience, and provides essential call management features like joining, leaving, and handling multiple participants efficiently.",
     tags: [
       {
         name: "react",
@@ -426,19 +428,20 @@ const projects = [
         borderColor: "border-[#56ccf28a]",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
         borderColor: "border-[#ec008c8a]",
       },
       {
-        name: "restapi",
+        name: "zegocloud",
         color: "green-text-gradient",
         borderColor: "border-[#11998e8a]",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    image: videoCallApp,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Video_Call_App/",
+    live_link: "https://rajatgangwar-videocallapp.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
   {

@@ -29,6 +29,7 @@ import itjobxs from "./company/itjobxs.png"
 
 import jobPortal from "./projects/job-portal.png"
 import busTicketBooking from "./projects/bus-ticket-booking.png"
+import videoCallApp from "./projects/video-call-app.png"
 import jobit from "./jobit.png"
 import tripguide from "./tripguide.png"
 
@@ -67,6 +68,7 @@ export {
   threejs,
   busTicketBooking,
   jobPortal,
+  videoCallApp,
   jobit,
   tripguide,
   clock,
