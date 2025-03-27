@@ -23,6 +23,7 @@ import {
   itjobxs,
   busTicketBooking,
   videoCallApp,
+  moviesWatchList,
 } from "../assets"
 
 const navLinks = [
@@ -445,12 +446,12 @@ const projects = [
     likes: Math.floor(Math.random() * 100),
   },
   {
-    name: "Trip Guide",
+    name: "Movies WatchList",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a movie search and watchList app with real-time API fetching, dynamic query handling, and request cancellation. Users can search movies, view details, rate them, and manage a watchList. Optimized with Redux for state management, ensuring smooth and an intuitive user experience.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
         borderColor: "border-[#56ccf28a]",
       },
@@ -460,14 +461,15 @@ const projects = [
         borderColor: "border-[#ec008c8a]",
       },
       {
-        name: "supabase",
-        color: "yellow-text-gradient",
-        borderColor: "border-[#ffdd006a]",
+        name: "redux",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    image: moviesWatchList,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Movies_WatchList",
+    live_link: "https://rajatgangwar-movieswatchlist.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
 ]
