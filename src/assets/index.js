@@ -22,13 +22,15 @@ import cpp from "./tech/cpp.png"
 import vscode from "./tech/vscode.png"
 import gsap from "./tech/gsap.png"
 import motion from "./tech/motion.png"
+import zod from "./tech/zod.png"
 import githubTech from "./tech/github.png"
 
 import edfora from "./company/edfora.png"
 import itjobxs from "./company/itjobxs.png"
 
-import jobPortal from "./projects/job-portal.png"
+import foodieExpress from "./projects/foodie-express.png"
 import busTicketBooking from "./projects/bus-ticket-booking.png"
+import jobPortal from "./projects/job-portal.png"
 import videoCallApp from "./projects/video-call-app.png"
 import moviesWatchList from "./projects/movies-watchlist.png"
 import jobit from "./jobit.png"
@@ -67,6 +69,8 @@ export {
   tailwind,
   typescript,
   threejs,
+  zod,
+  foodieExpress,
   busTicketBooking,
   jobPortal,
   videoCallApp,

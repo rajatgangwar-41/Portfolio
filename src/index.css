@@ -194,6 +194,14 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .neon-text-gradient {
+    background: #00ff87;
+    background: -webkit-linear-gradient(to top, #00ff87, #60efff);
+    background: linear-gradient(to top, #00ff87, #60efff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   /* canvas- styles */
   .canvas-loader {
     font-size: 10px;

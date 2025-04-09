@@ -21,9 +21,11 @@ import {
   computer,
   edfora,
   itjobxs,
+  foodieExpress,
   busTicketBooking,
   videoCallApp,
   moviesWatchList,
+  zod,
 } from "../assets"
 
 const navLinks = [
@@ -287,6 +289,10 @@ const technologies = [
     icon: motion,
   },
   {
+    name: "Zod",
+    icon: zod,
+  },
+  {
     name: "Git",
     icon: git,
   },
@@ -302,9 +308,9 @@ const technologies = [
 
 const projects = [
   {
-    name: "Bus Ticket Booking",
+    name: "Foodie Express",
     description:
-      "Developed a bus ticket booking platform with bus search, seat selection, seat availability check, smooth animations, advanced filters (price range, bus amenities, bus company, bus type), user information validation, and ticket printing for a seamless booking experience.",
+      "Developed a Food Delivery Platform with real-time restaurant listings, dynamic menu browsing, food ordering service, user authentication, cart management, account management, secure checkout, order tracking, and secure payment integration.",
     tags: [
       {
         name: "react",
@@ -321,6 +327,58 @@ const projects = [
         color: "green-text-gradient",
         borderColor: "border-[#11998e8a]",
       },
+      {
+        name: "redux toolkit",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "rtk query",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "zod",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: foodieExpress,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Foodie_Express",
+    live_link: "https://rajatgangwar-foodieexpress.netlify.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Bus Ticket Booking",
+    description:
+      "Developed a bus ticket booking platform with bus search, seat selection, seat availability check, smooth animations, advanced filters (price range, bus amenities, bus company, bus type), user information validation, and ticket printing for a seamless experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "motion",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "context api",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "zod",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
     ],
     image: busTicketBooking,
     source_code_link:
@@ -331,7 +389,7 @@ const projects = [
   {
     name: "Job Portal",
     description:
-      "Developed a job portal with role-based authentication, allowing recruiters to post and manage jobs while candidates can apply and save listings. Designed a responsive UI for seamless user experience.",
+      "Developed a job portal with role-based authentication, allowing recruiters to post and manage jobs while candidates can apply and save listings. Designed a responsive UI for seamless user experience and efficient job management.",
     tags: [
       {
         name: "react",
@@ -363,33 +421,6 @@ const projects = [
     source_code_link:
       "https://github.com/rajatgangwar-41/Project_React_BP-Job_Portal",
     live_link: "https://rajatgangwar-jobportal.netlify.app/",
-    likes: Math.floor(Math.random() * 100),
-  },
-  {
-    name: "Video Call App",
-    description:
-      "Developed a video calling app enabling users to join one-on-one or group calls, exchange real-time messages, and generate sharable call links. It offers an intuitive user experience, and provides essential call management features like joining, leaving, and handling multiple participants efficiently.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-        borderColor: "border-[#56ccf28a]",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-        borderColor: "border-[#ec008c8a]",
-      },
-      {
-        name: "zegocloud",
-        color: "green-text-gradient",
-        borderColor: "border-[#11998e8a]",
-      },
-    ],
-    image: videoCallApp,
-    source_code_link:
-      "https://github.com/rajatgangwar-41/Project_React_BP-Video_Call_App/",
-    live_link: "https://rajatgangwar-videocallapp.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
   {
