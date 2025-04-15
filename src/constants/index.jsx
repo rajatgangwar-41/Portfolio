@@ -13,7 +13,6 @@ import {
   gsap,
   motion,
   githubTech,
-  jobPortal,
   clock,
   code,
   computer,
@@ -21,6 +20,8 @@ import {
   itjobxs,
   foodieExpress,
   busTicketBooking,
+  jobPortal,
+  cryptoTracker,
   videoCallApp,
   moviesWatchList,
   zod,
@@ -422,35 +423,9 @@ const projects = [
     likes: Math.floor(Math.random() * 100),
   },
   {
-    name: "Car Rent",
+    name: "Crypto Tracker",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-        borderColor: "border-[#56ccf28a]",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-        borderColor: "border-[#ec008c8a]",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-        borderColor: "border-[#11998e8a]",
-      },
-    ],
-    image: jobPortal,
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
-    likes: Math.floor(Math.random() * 100),
-  },
-  {
-    name: "Video Call App",
-    description:
-      "Developed a video calling app enabling users to join one-on-one or group calls, exchange real-time messages, and generate sharable call links. It offers an intuitive user experience, and provides essential call management features like joining, leaving, and handling multiple participants efficiently.",
+      "Developed a crypto tracker website that enables users to monitor real-time cryptocurrency prices, view market trends. Features include currency conversion, interactive charts, search functionality, and coin-specific insights with responsive design, and a seamless user experience",
     tags: [
       {
         name: "react",
@@ -463,15 +438,15 @@ const projects = [
         borderColor: "border-[#ec008c8a]",
       },
       {
-        name: "zegocloud",
+        name: "react-google-charts",
         color: "green-text-gradient",
         borderColor: "border-[#11998e8a]",
       },
     ],
-    image: videoCallApp,
+    image: cryptoTracker,
     source_code_link:
-      "https://github.com/rajatgangwar-41/Project_React_BP-Video_Call_App/",
-    live_link: "https://rajatgangwar-videocallapp.netlify.app/",
+      "https://github.com/rajatgangwar-41/Project_React_BP-Crypto_Tracker",
+    live_link: "https://rajatgangwar-cryptotracker.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
   {
@@ -499,6 +474,33 @@ const projects = [
     source_code_link:
       "https://github.com/rajatgangwar-41/Project_React_BP-Movies_WatchList",
     live_link: "https://rajatgangwar-movieswatchlist.netlify.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Video Call App",
+    description:
+      "Developed a video calling app enabling users to join one-on-one or group calls, exchange real-time messages, and generate sharable call links. It offers an intuitive user experience, and provides essential call management features like joining, leaving, and handling multiple participants efficiently.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "zegocloud",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+    ],
+    image: videoCallApp,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_React_BP-Video_Call_App/",
+    live_link: "https://rajatgangwar-videocallapp.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
 ]
