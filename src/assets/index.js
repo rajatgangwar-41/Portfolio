@@ -13,8 +13,10 @@ import html from "./tech/html.png"
 import javascript from "./tech/javascript.png"
 import mongodb from "./tech/mongodb.png"
 import nodejs from "./tech/nodejs.png"
+import next from "./tech/nextjs.png"
 import react from "./tech/reactjs.png"
 import redux from "./tech/redux.png"
+import zustand from "./tech/zustand.png"
 import tailwind from "./tech/tailwind.png"
 import typescript from "./tech/typescript.png"
 import threejs from "./tech/threejs.svg"
@@ -23,6 +25,7 @@ import vscode from "./tech/vscode.png"
 import gsap from "./tech/gsap.png"
 import motion from "./tech/motion.png"
 import zod from "./tech/zod.png"
+import jest from "./tech/jest.png"
 import githubTech from "./tech/github.png"
 
 import edfora from "./company/edfora.png"
@@ -45,6 +48,10 @@ import computer from "./about/computer.png"
 import rajat from "./rajat.jpeg"
 // import beach from "./beach.jpg"
 
+import manish from "./testimonials/manish_agrahari.jpeg"
+import ambreesh from "./testimonials/ambreesh_kushwah.jpeg"
+import karan from "./testimonials/karan_kumar.jpeg"
+
 export {
   logo,
   web,
@@ -65,12 +72,15 @@ export {
   javascript,
   mongodb,
   nodejs,
+  next,
   react,
   redux,
+  zustand,
   tailwind,
   typescript,
   threejs,
   zod,
+  jest,
   foodieExpress,
   busTicketBooking,
   jobPortal,
@@ -85,5 +95,7 @@ export {
   edfora,
   itjobxs,
   rajat,
-  // beach,
+  manish,
+  ambreesh,
+  karan,
 }

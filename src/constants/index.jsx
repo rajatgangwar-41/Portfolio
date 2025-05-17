@@ -5,8 +5,10 @@ import {
   typescript,
   html,
   css,
+  next,
   react,
   redux,
+  zustand,
   tailwind,
   git,
   vscode,
@@ -25,6 +27,10 @@ import {
   videoCallApp,
   moviesWatchList,
   zod,
+  jest,
+  manish,
+  ambreesh,
+  karan,
 } from "../assets"
 
 const navLinks = [
@@ -201,7 +207,7 @@ const services = [
     title: "Projects",
     icon: computer,
     from: 0,
-    to: 30,
+    to: 40,
   },
   {
     title: "Hours",
@@ -236,7 +242,7 @@ const experiences = [
     company_name: "ITJOBXS",
     icon: itjobxs,
     iconBg: "#E6DEDD",
-    date: "Aug 2024 - Present",
+    date: "Nov 2024 - May 2025",
     points: [
       "Worked on the Design and Development part of a fully responsive webpage for a particular section of itjobxs.com.",
       "Worked on User Verification/Authentication + Engineering challenges of detecting and removing the fake bots and posts.",
@@ -252,11 +258,11 @@ const technologies = [
     icon: cpp,
   },
   {
-    name: "HTML",
+    name: "HTML5",
     icon: html,
   },
   {
-    name: "CSS",
+    name: "CSS3",
     icon: css,
   },
   {
@@ -268,7 +274,11 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React",
+    name: "Next.js",
+    icon: next,
+  },
+  {
+    name: "React.js",
     icon: react,
   },
   {
@@ -276,8 +286,16 @@ const technologies = [
     icon: redux,
   },
   {
+    name: "Zustand",
+    icon: zustand,
+  },
+  {
     name: "Tailwind",
     icon: tailwind,
+  },
+  {
+    name: "Jest",
+    icon: jest,
   },
   {
     name: "Gsap",
@@ -509,26 +527,26 @@ const testimonials = [
   {
     testimonial:
       "He easily implemented the Mathematical symbols library in our Application which was looking not so easy.",
-    name: "Manish Gupta",
+    name: "Manish Agrihari",
     designation: "Manager",
     company: "Edfora",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    image: manish,
+  },
+  {
+    testimonial:
+      "After Rajat optimized our application, our traffic increased by 20%. We can't thank him enough!",
+    name: "Ambreesh Kushwaha",
+    designation: "Tech Lead",
+    company: "Edfora",
+    image: ambreesh,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rajat does.",
-    name: "Kumar K",
+    name: "Karan Jumar",
     designation: "Founder",
     company: "ITJOBXS",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-  },
-  {
-    testimonial:
-      "After Rajat optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/men/8.jpg",
+    image: karan,
   },
 ]
 
