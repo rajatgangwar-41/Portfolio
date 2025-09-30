@@ -10,9 +10,11 @@ import {
   redux,
   zustand,
   tailwind,
+  jotai,
+  sql,
   git,
   vscode,
-  gsap,
+  // gsap,
   motion,
   githubTech,
   clock,
@@ -20,18 +22,38 @@ import {
   computer,
   edfora,
   itjobxs,
+  echo,
+  vibe,
+  pixxel,
+  aeris,
+  eduno,
+  genix,
+  skimly,
   foodieExpress,
   busTicketBooking,
   jobPortal,
   cryptoTracker,
   videoCallApp,
-  moviesWatchList,
+  // moviesWatchList,
   zod,
   jest,
+  shadcn,
+  clerk,
+  prisma,
+  stripe,
+  tRPC,
+  inngest,
+  convex,
+  neon,
+  tanstackQuery,
+  orama,
+  linux,
+  vercel,
+  jira,
   manish,
   ambreesh,
   karan,
-} from "../assets"
+} from "../assets";
 
 const navLinks = [
   {
@@ -62,7 +84,7 @@ const navLinks = [
     id: "contact",
     title: "Contact",
   },
-]
+];
 
 const socialMedia = [
   {
@@ -196,7 +218,7 @@ const socialMedia = [
   //     </svg>
   //   ),
   // },
-]
+];
 
 const services = [
   {
@@ -207,7 +229,7 @@ const services = [
     title: "Projects",
     icon: computer,
     from: 0,
-    to: 40,
+    to: 60,
   },
   {
     title: "Hours",
@@ -221,7 +243,7 @@ const services = [
     from: 0,
     to: 5000,
   },
-]
+];
 
 const experiences = [
   {
@@ -236,7 +258,7 @@ const experiences = [
       "Reduced bugs by 40% through Typecript integration and MobX state optimization, improving overall app stability.",
       "Achieved 90% code reuse across projects by developing 15+ modular components, accelerating future development.",
       "Optimized performance using React.memo and code splitting, reducing re-renders by 35%.",
-      "Tech Stack: React Native, TypeScript, MobX, Realm",
+      "Tech Stack: React Native, Typescript, Mobx, Realm",
     ],
   },
   {
@@ -244,7 +266,7 @@ const experiences = [
     company_name: "ITJOBXS",
     icon: itjobxs,
     iconBg: "#E6DEDD",
-    date: "Nov 2024 - May 2025",
+    date: "April 2025 - Sep 2025",
     points: [
       "Security Enhancement: Purged 600+ fake registrations via automated MySQL queries targeting the non-standard email domains.",
       "Domain Validation System: Engineered real-time email validation using PHP string hashing to verify domain suffixes reducing the spam posts by 87.34%.",
@@ -253,10 +275,10 @@ const experiences = [
       "Notable Project: Prepdeck",
       "Developed and incorporated responsive UI components for the interview experience platform.",
       "Built interactive frontend features for seamless navigation of company-specific interview archives.",
-      "Tech Stack: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL",
+      "Tech Stack: HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
     ],
   },
-]
+];
 
 const technologies = [
   {
@@ -296,17 +318,29 @@ const technologies = [
     icon: zustand,
   },
   {
+    name: "Jotai",
+    icon: jotai,
+  },
+  {
     name: "Tailwind",
     icon: tailwind,
+  },
+  {
+    name: "Shadcn UI",
+    icon: shadcn,
+  },
+  {
+    name: "Clerk",
+    icon: clerk,
   },
   {
     name: "Jest",
     icon: jest,
   },
-  {
-    name: "Gsap",
-    icon: gsap,
-  },
+  // {
+  //   name: "Gsap",
+  //   icon: gsap,
+  // },
   {
     name: "Motion",
     icon: motion,
@@ -314,6 +348,50 @@ const technologies = [
   {
     name: "Zod",
     icon: zod,
+  },
+  {
+    name: "Tanstack Query",
+    icon: tanstackQuery,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "tRPC",
+    icon: tRPC,
+  },
+  {
+    name: "Inngest",
+    icon: inngest,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "Stripe",
+    icon: stripe,
+  },
+  {
+    name: "Convex",
+    icon: convex,
+  },
+  {
+    name: "Neon",
+    icon: neon,
+  },
+  {
+    name: "Orama",
+    icon: orama,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Vercel",
+    icon: vercel,
   },
   {
     name: "Git",
@@ -327,9 +405,315 @@ const technologies = [
     name: "VS Code",
     icon: vscode,
   },
-]
+  {
+    name: "Jira",
+    icon: jira,
+  },
+];
 
 const projects = [
+  {
+    name: "Echo",
+    description:
+      "Developed an AI-Powered Chatbot Service, a B2B SaaS application enabling businesses to interact with customers via AI chat and voice assistants. Integrated a management dashboard for monitoring conversations, analytics, and customization.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "shadcn/ui",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "turborepo",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "sentry",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "aws",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "vapi",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "convex",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: echo,
+    source_code_link: "https://github.com/rajatgangwar-41/Project_Next_BP-Echo",
+    live_link: "https://rajatgangwar-echo-web.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Vibe",
+    description:
+      "Developed an AI-Powered Vibe Coding Platform that generates code based on user prompts. Integrated a live preview sandbox to test and interact with generated code. Provided an intuitive interface for seamless coding and prompt-based automation.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "clerk",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "tRPC",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "inngest",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "e2b",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "neon",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: vibe,
+    source_code_link: "https://github.com/rajatgangwar-41/Project_Next_BP-Vibe",
+    live_link: "https://rajatgangwar-vibe.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Pixxel",
+    description:
+      "Developed an AI-Powered Image Editor that allows users to edit and enhance images effortlessly. Integrated AI features for background removal, color correction, and style enhancement. Provided an intuitive interface for easy image uploading.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "clerk",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "imagekit",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "convex",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "fabric",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: pixxel,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_Next_BP-Pixxel",
+    live_link: "https://rajatgangwar-pixxel.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Aeris",
+    description:
+      "Developed an AI-Powered Email Management Platform to organize and manage emails efficiently. Integrated AI-based smart reply suggestions to streamline communication and save user time. Intuitive interface for effortless email management.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "jotai",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "tRPC",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "orama",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "aurinko",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "tanstackquery",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: aeris,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_Next_BP-Aeris",
+    live_link: "https://rajatgangwar-aeris.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Eduno",
+    description:
+      "Developed an interactive dashboard to manage student records, attendance, exams, and teacher data efficiently. Implemented role-based access and a clean UI for streamlined administration and improved decision-making.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "shadcn/ui",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "typescript",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "recharts",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "zod",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: eduno,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_Next_BP-Eduno",
+    live_link: "https://rajatgangwar-eduno.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Genix",
+    description:
+      "Developed a versatile AI-powered application that generates code, text, images, music, and videos, providing users with a unified platform for creative and technical tasks. Integrated multiple AI models to support diverse content generation.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "shadcn/ui",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "clerk",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "stripe",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "neon",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: genix,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_Next_BP-Genix",
+    live_link: "https://rajatgangwar-genix.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
+  {
+    name: "Skimly",
+    description:
+      "Developed a PDF Summarizer Application that processes PDF files and generates concise, easy-to-read summaries, helping users quickly grasp key points from large documents. Integrated a user-friendly interface for seamless summary viewing.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+        borderColor: "border-[#56ccf28a]",
+      },
+      {
+        name: "shadcn/ui",
+        color: "green-text-gradient",
+        borderColor: "border-[#11998e8a]",
+      },
+      {
+        name: "clerk",
+        color: "orange-text-gradient",
+        borderColor: "border-[#944d1f]",
+      },
+      {
+        name: "langchain",
+        color: "pink-text-gradient",
+        borderColor: "border-[#ec008c8a]",
+      },
+      {
+        name: "stripe",
+        color: "neon-text-gradient",
+        borderColor: "border-[#00ff878a]",
+      },
+      {
+        name: "neon",
+        color: "yellow-text-gradient",
+        borderColor: "border-[#ffdd006a]",
+      },
+    ],
+    image: skimly,
+    source_code_link:
+      "https://github.com/rajatgangwar-41/Project_Next_BP-Skimly",
+    live_link: "https://rajatgangwar-skimly.vercel.app/",
+    likes: Math.floor(Math.random() * 100),
+  },
   {
     name: "Foodie Express",
     description:
@@ -473,33 +857,33 @@ const projects = [
     live_link: "https://rajatgangwar-cryptotracker.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
-  {
-    name: "Movies WatchList",
-    description:
-      "Developed a movie search and watchList app with real-time API fetching, dynamic query handling, and request cancellation. Users can search movies, view details, rate them, and manage a watchList. Optimized with Redux for state management, ensuring smooth and an intuitive user experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-        borderColor: "border-[#56ccf28a]",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-        borderColor: "border-[#ec008c8a]",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-        borderColor: "border-[#11998e8a]",
-      },
-    ],
-    image: moviesWatchList,
-    source_code_link:
-      "https://github.com/rajatgangwar-41/Project_React_BP-Movies_WatchList",
-    live_link: "https://rajatgangwar-movieswatchlist.netlify.app/",
-    likes: Math.floor(Math.random() * 100),
-  },
+  // {
+  //   name: "Movies WatchList",
+  //   description:
+  //     "Developed a movie search and watchList app with real-time API fetching, dynamic query handling, and request cancellation. Users can search movies, view details, rate them, and manage a watchList. Optimized with Redux for state management, ensuring smooth and an intuitive user experience.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //       borderColor: "border-[#56ccf28a]",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //       borderColor: "border-[#ec008c8a]",
+  //     },
+  //     {
+  //       name: "redux",
+  //       color: "green-text-gradient",
+  //       borderColor: "border-[#11998e8a]",
+  //     },
+  //   ],
+  //   image: moviesWatchList,
+  //   source_code_link:
+  //     "https://github.com/rajatgangwar-41/Project_React_BP-Movies_WatchList",
+  //   live_link: "https://rajatgangwar-movieswatchlist.netlify.app/",
+  //   likes: Math.floor(Math.random() * 100),
+  // },
   {
     name: "Video Call App",
     description:
@@ -527,7 +911,7 @@ const projects = [
     live_link: "https://rajatgangwar-videocallapp.netlify.app/",
     likes: Math.floor(Math.random() * 100),
   },
-]
+];
 
 const testimonials = [
   {
@@ -549,23 +933,23 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rajat does.",
-    name: "Karan Jumar",
+    name: "Karan Kumar",
     designation: "Founder",
     company: "ITJOBXS",
     image: karan,
   },
-]
+];
 
 const text = {
   heroSection:
     "Let's connect! I'm a passionate developer eager to collaborate, innovate, and build amazing experiences. Reach out and say hello!",
-}
+};
 
 const resumeURL =
   // "https://drive.google.com/file/d/1D7g2KlwqfBUCU0DceHR_EHPoMgjeax9j/view?usp=sharing"
   // "https://drive.google.com/file/d/1D7g2KlwqfBUCU0DceHR_EHPoMgjeax9j/view?usp=sharing"
   // "https://drive.google.com/drive/u/2/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59"
-  "https://drive.google.com/drive/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59?usp=drive_link"
+  "https://drive.google.com/drive/folders/1tf2Qg0Wu796_5qxAfcVfpSk8QcxcuK59?usp=drive_link";
 
 export {
   navLinks,
@@ -577,4 +961,4 @@ export {
   projects,
   text,
   resumeURL,
-}
+};

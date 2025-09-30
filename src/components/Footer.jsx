@@ -1,8 +1,8 @@
-import { navLinks, socialMedia } from "../constants"
-import { SocialMedia } from "./index"
-import { styles } from "../styles"
-import { motion } from "motion/react"
-import { fadeIn } from "../utils/motion"
+import { navLinks, socialMedia } from "../constants";
+import { SocialMedia } from "./index";
+import { styles } from "../styles";
+import { motion } from "motion/react";
+import { fadeIn } from "../utils/motion";
 
 const Footer = () => {
   return (
@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
           <ul className="list-none px-5 py-1 mb-8 text-white gap-5 flex flex-wrap">
             {socialMedia.map((ele, index) => {
-              return <SocialMedia key={ele.id} index={index} {...ele} />
+              return <SocialMedia key={ele.id} index={index} {...ele} />;
             })}
           </ul>
         </div>
@@ -126,10 +126,12 @@ const Footer = () => {
           </svg>{" "}
           by Rajat Gangwar
         </div>
-        <div> Copyright &copy; 2025. All Rights Reserved</div>
+        <div>
+          Copyright &copy; {new Date().getFullYear()}. All Rights Reserved
+        </div>
       </div>
     </motion.footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
