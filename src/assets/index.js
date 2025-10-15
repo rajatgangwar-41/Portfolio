@@ -41,6 +41,7 @@ import orama from "./tech/orama.png";
 import linux from "./tech/linux.png";
 import vercel from "./tech/vercel.png";
 import jira from "./tech/jira.png";
+import nextAuth from "./tech/next-auth.png";
 import githubTech from "./tech/github.png";
 
 import edfora from "./company/edfora.png";
@@ -119,6 +120,7 @@ export {
   linux,
   vercel,
   jira,
+  nextAuth,
   echo,
   vibe,
   pixxel,

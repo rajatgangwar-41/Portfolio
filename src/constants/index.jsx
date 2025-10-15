@@ -50,6 +50,7 @@ import {
   linux,
   vercel,
   jira,
+  nextAuth,
   manish,
   ambreesh,
   karan,
@@ -332,6 +333,10 @@ const technologies = [
   {
     name: "Clerk",
     icon: clerk,
+  },
+  {
+    name: "Next Auth",
+    icon: nextAuth,
   },
   {
     name: "Jest",
