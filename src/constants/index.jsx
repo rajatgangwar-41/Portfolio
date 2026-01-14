@@ -267,11 +267,11 @@ const experiences = [
     company_name: "ITJOBXS",
     icon: itjobxs,
     iconBg: "#E6DEDD",
-    date: "April 2025 - Sep 2025",
+    date: "June 2025 - Dec 2025",
     points: [
       "Security Enhancement: Purged 600+ fake registrations via automated MySQL queries targeting the non-standard email domains.",
       "Domain Validation System: Engineered real-time email validation using PHP string hashing to verify domain suffixes reducing the spam posts by 87.34%.",
-      "Secure Registration: Integrated Google reCAPTCHA v3 on the registration page to block automated bot signups.",
+      // "Secure Registration: Integrated Google reCAPTCHA v3 on the registration page to block automated bot signups.",
       "Database Optimization: Solved critical storage overload caused by 20+ daily bot accounts, normalizing the database growth.",
       "Notable Project: Prepdeck",
       "Developed and incorporated responsive UI components for the interview experience platform.",
